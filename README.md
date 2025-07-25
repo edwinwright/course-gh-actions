@@ -1,1 +1,1 @@
-[![upper-cross](https://github.com/edwinwright/course-gh-actions/actions/workflows/upper-cross.yml/badge.svg)](https://github.com/edwinwright/course-gh-actions/actions/workflows/upper-cross.yml)
+[![upper-cross](https://github.com/edwinwright/course-gh-actions/actions/workflows/upper-cross.yml/badge.svg?branch=main)](https://github.com/edwinwright/course-gh-actions/actions/workflows/upper-cross.yml)
