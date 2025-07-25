@@ -22,3 +22,11 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - run: ./build-push.sh
         working-directory: ./api
+
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    needs: build
+    steps:
+      - run: echo "Deploying to Azure..."
