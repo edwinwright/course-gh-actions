@@ -29,4 +29,4 @@ jobs:
       name: production
     needs: build
     steps:
-      - run: echo "Deploying to Azure..."
+      - run: echo "Deploying to Azure...!!"
