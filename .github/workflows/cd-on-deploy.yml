@@ -1,0 +1,15 @@
+name: cd-on-deploy
+
+on:
+  deployment: # Triggered on deployment events
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify on deployment
+        run: echo "Deployment has been triggered!"
+        env:
+          DEPLOYMENT_ID: ${{ github.event.deployment.id }}
+          DEPLOYMENT_STATUS: ${{ github.event.deployment.status }}
+          DEPLOYMENT_ENVIRONMENT: ${{ github.event.deployment.environment }}
